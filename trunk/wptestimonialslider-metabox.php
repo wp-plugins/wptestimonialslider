@@ -95,3 +95,73 @@ function wptestimonialslider_save_meta_box_data( $post_id ) {
 add_action( 'save_post', 'wptestimonialslider_save_meta_box_data' );
 
 
+// Ad for PRO version
+
+function wp_testimonial_pro_add_meta_box() {
+
+		add_meta_box(
+			'wp_testimonial_sectionid_pro',
+			__( "WP Testimonial Slider - Upgrade to PRO" , 'wptestimonialslider' ),
+			'wp_testimonial_meta_box_pro',
+			'wptestimonialslider'
+		);
+}
+add_action( 'add_meta_boxes', 'wp_testimonial_pro_add_meta_box' );
+
+function wp_testimonial_meta_box_pro() {  ?>
+	
+	<p>
+	<h3 style="padding-left:0">Available features at WP Testimonial Slider - PRO</h3>
+    <ol class="">
+		<li>9 different Transitions</li>
+		<li>9 different Themes / Styles</li>
+		<li>6 Different Author image styles</li>
+		<li>Tons of shortcode parameters</li>
+		<li>Category wise Testimonials</li>
+		<li>Great Settings Panel</li>
+		<li>Enable / Disable - Stop on Hover</li>
+		<li>On / Off Navigation Arrow</li>
+		<li>Control Sliding Speed</li>
+		<li>On / Off Pagination</li>
+		<li>Unlimited Colors & Font styling</li>
+		<li>Google fonts</li>
+		<li>Different Theming</li>
+		<li>Author Image size control</li>
+		<li>Works with any WordPress Theme.</li>
+		<li>Build with HTML5 & CSS3.</li>
+		<li>Responsive. Work on any device.</li>
+		<li>Easy and user-friendly setup.</li>
+		<li>Well documentation and support.</li>
+    	<li>And many more.</li>
+    </ol>
+  </p>
+  <p><!-- <a class="button button-primary button-large" href="http://www.gsamdani.me/product/gs-testimonial-slider" target="_blank">Upgrade to PRO</a> -->
+	<h2>Upgrade to PRO</h2>
+	<a href="https://www.jvzoo.com/b/0/165193/14"><img src="http://i.jvzoo.com/0/165193/14" alt="WP TESTIMONIAL SLIDER" border="0" /></a>
+  </p>
+<?php
+}
+
+
+// SIDEBAR Ad for PRO version
+
+function wp_testimonial_pro_sidebar_add_meta_box() {
+
+		add_meta_box(
+			'wp_testimonial_sectionid_pro_sidebar',
+			__( "Other Info" , 'wptestimonialslider' ),
+			'wp_testimonial_meta_box_pro_sidebar',
+			'wptestimonialslider',
+			'side',
+			'low'
+		);
+}
+add_action( 'add_meta_boxes', 'wp_testimonial_pro_sidebar_add_meta_box' );
+
+function wp_testimonial_meta_box_pro_sidebar() { ?>
+	
+	<a href="http://demo.wptestimonialslider.com/" target="_blank" style="text-decoration: none;width:97%;overflow:hidden;margin:5px;background: #ffffff;border: 1px solid #eeeeee;display: block;float: left;text-align: center;-webkit-border-radius: 4px;-moz-border-radius: 4px;border-radius: 4px; outline: 0!important;" ><h3 style="margin: 0px;background: #eeeeee;-webkit-border-top-left-radius: 3px;-webkit-border-top-right-radius: 3px;-moz-border-radius-topleft: 3px;-moz-border-radius-topright: 5px;border-top-left-radius: 3px;border-top-right-radius: 3px;padding:5px;text-decoration: none;color:#333">WP Testimonial Slider - DEMO</h3><img style="max-width: 100%;height:auto; margin: 5px 0 2px;" src="<?php echo plugins_url('wptestimonialslider/img/wp_testimonial_slider.png'); ?>" /></a>
+
+	<div style="clear:both"></div>
+<?php
+}

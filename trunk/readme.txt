@@ -3,8 +3,8 @@ Contributors: wptestimonialslider
 Donate link: http://wptestimonialslider.com/contact
 Tags: Testimonial slider, Best testimonial slider, Responsive testimonial slider, easy testimonial slider, client testimonial slider, testimonial slider wordpress, Testimonial plugin, testimonial, testimonial rotator
 Requires at least: 3.3
-Tested up to: 4.1
-Stable tag: 1.0.0
+Tested up to: 4.2.2
+Stable tag: 1.0.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
