@@ -1,6 +1,5 @@
 <?php 
 
-
 function wpt_slider_trigger(){
 ?>
 
@@ -17,7 +16,6 @@ jQuery(document).ready(function(){
 <?php
 }
 add_action('wp_footer','wpt_slider_trigger');
-
 
 
 add_shortcode( 'wpt_testimonial', 'wpt_shortcode' );
@@ -58,8 +56,6 @@ function wpt_shortcode() {
 				$gs_testimonial = $gs_testimonial_url[0];
 				$gs_testimonial_alt = get_post_meta($wpt_id,'_wp_attachment_image_alt',true);
 
-
-
 				$output .= '<div class="gs_testimonial_single">';
 				$output .= '<div class="testimonial-box">';
 				$output .= '<div class="box-content"><p>'. get_the_content() .'</p></div>';
@@ -75,25 +71,23 @@ function wpt_shortcode() {
 				if($meta['gs_t_client_design'][0]){
 
 					$output .= '<div class="box-designation"><span>Designation:</span> '. $meta['gs_t_client_design'][0] .'</div>';
-
 				}
 
 				$output .= '</div></div>';
-
 			}
 
 			$output .= '</div>';
-
 			$output .= '<div class="center cycle-nav"><a id="prev">Prev</a><a id="next">Next</a></div>';
-
 			$output .= '<div class="cycle-pager" id="custom-pager"></div>';
 
 		} else {
 			$output .= "No Testimonial Added!";
 		}
 
-	$output .= '</div>';
+		wp_reset_postdata();
+		wp_reset_query();
 
+	$output .= '</div>';
 	return $output;
 }
 
