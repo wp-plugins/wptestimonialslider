@@ -11,7 +11,7 @@
  * Plugin Name:			WP Testimonial Slider
  * Plugin URI:			http://wptestimonialslider.com
  * Description:       	Best Responsive Testimonials slider to display client's testimonials / recommendations. Display anywhere at your site using shortcode like [wpt_testimonial]
- * Version:           	1.0.1
+ * Version:           	1.0.2
  * Author:       		WP Testimonial Slider
  * Author URI:       	http://wptestimonialslider.com
  * Text Domain:       	wptestimonialslider

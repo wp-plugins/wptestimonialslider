@@ -1,5 +1,4 @@
 <?php 
-
 /**
 * Registers a new post type
 * @uses $wp_post_types Inserts new post type object into the list

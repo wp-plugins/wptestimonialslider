@@ -1,5 +1,4 @@
 <?php 
-
 /**
  * Adds a box to the main column on the Post and Page edit screens.
  */

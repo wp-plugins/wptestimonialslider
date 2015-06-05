@@ -1,5 +1,4 @@
 <?php 
-
 // ============== Displaying Additional Columns ===============
 
 add_filter( 'manage_edit-wptestimonialslider_columns', 'wpt_screen_columns' );
